@@ -16,3 +16,10 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+# Ignore all tempfiles.
+/tmp
+/.settings
+/log
+.loadpath
+.project
