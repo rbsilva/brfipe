@@ -45,9 +45,9 @@ class Fipe
 
     page = get_data(data, veiculo)
     
-    modelos = extrai_modelos(page)
+    anos_modelos = extrai_anos_modelos(page)
     
-    ano_modelo = modelos.invert[ano_modelo]
+    ano_modelo = anos_modelos.invert[ano_modelo]
 
     view_state = catch_view_state(page)
     event_validation = catch_event_validation(page)
