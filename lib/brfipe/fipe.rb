@@ -44,6 +44,10 @@ class Fipe
     data << ["__VIEWSTATE", view_state]
 
     page = get_data(data, veiculo)
+    
+    modelos = extrai_modelos(page)
+    
+    ano_modelo = modelos.invert[ano_modelo]
 
     view_state = catch_view_state(page)
     event_validation = catch_event_validation(page)
