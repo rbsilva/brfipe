@@ -6,6 +6,8 @@ source 'http://antrc:crtna10@gems.scilonax.com'
 # development dependencies will be added by default to the :development group.
 gemspec
 
+gem "rake"
+
 group :test do
   gem "active_support"
   gem "mocha", :require => false
